@@ -1,0 +1,63 @@
+% A malformed BibTeX file for testing error tolerance
+
+% Missing closing brace
+@article{broken1,
+    author = {Test Author},
+    title = {Missing Brace
+
+% This one is valid
+@article{valid1,
+    author = {Good Author},
+    title = {Valid Entry},
+    year = {2023},
+}
+
+% Invalid characters in key
+@article{bad key with spaces,
+    author = {Test},
+}
+
+% Missing equals sign
+@article{broken2,
+    author {Test Author},
+    title = {Test},
+}
+
+% Empty entry type
+@{nokey,
+    author = {Test},
+}
+
+% Another valid entry
+@book{valid2,
+    author = {Another Author},
+    title = {Another Book},
+    publisher = {Publisher},
+    year = {2022},
+}
+
+% Unclosed string
+@article{broken3,
+    author = "Unclosed string,
+    title = {Test},
+}
+
+% Multiple commas (should be tolerated)
+@article{tolerant1,
+    author = {Test},,
+    title = {Title},,,,
+}
+
+% No fields at all
+@misc{empty,}
+
+% Trailing content without entry
+Some random text that is not an entry
+
+% Final valid entry
+@inproceedings{valid3,
+    author = {Final Author},
+    title = {Final Title},
+    booktitle = {Conference},
+    year = {2021},
+}

@@ -1,0 +1,63 @@
+% A valid BibTeX file with various entry types and features
+
+@string{ieee = {IEEE}}
+@string{acm = {ACM}}
+
+@preamble{"\\newcommand{\\noopsort}[1]{}"}
+
+@article{smith2023,
+    author = {John Smith and Jane Doe},
+    title = {A Comprehensive Study of Machine Learning},
+    journal = ieee # { Transactions on Neural Networks},
+    year = {2023},
+    volume = {34},
+    number = {5},
+    pages = {1234--1256},
+    doi = {10.1109/TNN.2023.1234567},
+    abstract = {This paper presents a comprehensive study...},
+}
+
+@inproceedings{doe2022,
+    author = {Jane Doe and Bob Wilson},
+    title = {Deep Learning for Computer Vision},
+    booktitle = {Proceedings of the International Conference on Computer Vision},
+    year = {2022},
+    pages = {100-110},
+    organization = acm,
+}
+
+@book{wilson2021,
+    author = {Bob Wilson},
+    title = {Introduction to Algorithms},
+    publisher = {MIT Press},
+    year = {2021},
+    edition = {4th},
+    isbn = {978-0-262-04630-5},
+}
+
+@misc{online2023,
+    author = {Anonymous},
+    title = {Online Resource},
+    howpublished = {\url{https://example.com}},
+    year = {2023},
+    note = {Accessed: 2023-12-01},
+}
+
+@phdthesis{johnson2020,
+    author = {Alice Johnson},
+    title = {Novel Approaches to Natural Language Processing},
+    school = {Stanford University},
+    year = {2020},
+}
+
+@techreport{tech2019,
+    author = {Research Team},
+    title = {Technical Report on Cloud Computing},
+    institution = {Google Research},
+    year = {2019},
+    number = {TR-2019-001},
+}
+
+@comment{
+    This is a comment that should be preserved but not affect parsing.
+}
